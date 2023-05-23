@@ -1,0 +1,314 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*TIPOGRAFIAS*/
+@font-face {
+    font-family: "Bebas";
+    src: url(./tipografias/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(./tipografias/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+$texto1:"Bebas";
+$texto2:"Montserrat";
+
+/*COLORES*/
+$color1:#fefefe;
+$color2:#071013;
+$color3:#FCBF23;
+
+body{
+    background-color: $color2;
+    align-items: center;
+    justify-content: center;
+}
+
+/*HEADER*/
+header{
+        .inicio{
+            text-align: center;
+            background-color: $color1;
+            padding: 10px;
+        }
+
+        .logoImagen2{
+            height: 40px;
+        }
+
+        .nav{
+            justify-content: center;
+            padding: 10px;
+            margin: 20px 0 20px 0;
+
+            a{
+                text-decoration: none !important;
+                color: $color1;
+                font-family: $texto2;
+            }
+        }
+    }
+
+nav a:hover{
+    color: $color3;
+}
+
+.carousel-item{
+    position: relative;
+    height: 600px;
+
+    .image-gradient{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/fondo2.jpg) !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        
+    }
+
+    .contenido{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center; 
+        
+        h1{
+            font-family: $texto1;
+            color: $color1;
+            letter-spacing: 3px;
+            font-size: 70px;
+        }
+
+        p{
+            color: $color1;
+            font-size: 25px;
+        }
+
+        button{
+            font-family: $texto1;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            font-size: 20px;
+            border: none;
+        }
+    }
+}
+
+.categorias{
+    position: relative;
+    background-color: $color1;
+    z-index: -1;
+
+.nombreCategoria{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, 450px);
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    padding: 100px;
+    z-index: 2;
+
+    div{
+        background-size: cover;
+        box-shadow: 10px 10px 10px $color2;
+    }
+
+    .img1{
+        background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/infantiles.JPG);
+        grid-area: 1/1/2/2;
+        position: relative;
+
+        p{
+            color: $color2;
+            font-family: $texto2;
+            font-size: 60px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    
+    .img3{
+        background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/1.JPG);
+
+        grid-area: 2/3/3/4;
+        position: relative;
+
+        p{
+            color: $color2;
+            font-family: $texto2;
+            font-size: 60px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+}
+.cat{
+    box-shadow: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 600px;
+    width: 50%;
+    background-color: $color2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+
+    p{
+        font-family: $texto1;
+        font-size: 80px;
+        letter-spacing: 2px;
+        color: $color3;
+    }
+}
+}
+
+.reseñas{
+    background-color: $color2;
+    text-align: center;
+
+    div{
+        p{
+            justify-content: center;
+            font-size: 80px;
+            font-family: $texto1;
+            color: $color3;
+            letter-spacing: 2px;
+            padding: 10px;
+        }
+    }
+
+    .carousel-item{
+        position: relative;
+        height: 400px;
+    
+        .image-gradient1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 99%, 0.708)), url(./images/fondo2.jpg) !important;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            padding: 40px;
+        }
+
+        .image-gradient2{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(hsl(195, 46%, 5%), hsla(50, 100%, 50%, 0.708)), url(./images/fondo2.jpg) !important;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            padding: 40px;
+        }
+
+        .image-gradient3{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(hsl(195, 46%, 5%), hsla(134, 92%, 15%, 0.708)), url(./images/fondo2.jpg) !important;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            padding: 40px;
+        }
+
+        .image-gradient4{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(hsl(195, 46%, 5%), hsla(234, 85%, 23%, 0.708)), url(./images/fondo2.jpg) !important;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            padding: 40px;
+        }
+    }
+}
+
+/*FOOTER*/
+footer{
+    &:hover{
+        color: $color3;
+    }
+
+    .pages{
+        font-size: 30px;
+        color: $color1;
+        padding: 20px;
+        word-spacing: 20px;
+        text-align: center;
+    }
+
+    .row{
+        color: $color1;
+        text-align: center;
+        justify-content: center;
+
+        h5{
+            font-family: $texto1;
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 4px;
+            margin-top: 10px;
+            margin-bottom: 2px;
+        }
+
+        .links{
+            text-decoration: none;
+            font-family: $texto2;
+            margin: auto;
+            text-align: center;
+            justify-content: space-between;
+            font-style: italic;
+            color: $color1;
+            &:hover{
+                color: $color3;
+            }
+        }
+    }
+
+    .pie{
+        margin-top: 20px;
+
+        .final{
+            color: $color1;
+            margin-top: 10px 0 10px 0;
+            font-family: $texto1;
+            font-style: italic;
+            font-size: 30px;
+            text-align: center;
+
+            .mirco{
+                color: $color3;
+                text-decoration: none;
+            }
+        }
+    }
+}
