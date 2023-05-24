@@ -33,7 +33,10 @@ header .logoImagen2 {
 header .nav {
   justify-content: center;
   padding: 10px;
-  margin: 20px 0 20px 0;
+  margin: 10px;
+}
+header .nav ul {
+  display: flex;
 }
 header .nav a {
   text-decoration: none !important;
@@ -66,23 +69,43 @@ nav a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  padding: 0;
 }
 .carousel-item .contenido h1 {
   font-family: "Bebas";
   color: #fefefe;
   letter-spacing: 3px;
-  font-size: 70px;
+  font-size: 140px;
 }
 .carousel-item .contenido p {
   color: #fefefe;
-  font-size: 25px;
+  font-size: 50px;
+  font-style: italic;
 }
 .carousel-item .contenido button {
   font-family: "Bebas";
   letter-spacing: 2px;
   margin-top: 20px;
-  font-size: 20px;
+  font-size: 35px;
   border: none;
+  border-radius: 10px;
+  padding: 15px;
+}
+.carousel-item .contenido .nombre {
+  font-family: "Bebas";
+  color: #fefefe;
+  letter-spacing: 3px;
+  font-size: 80px;
+}
+.carousel-item .contenido .coment {
+  color: #fefefe;
+  font-size: 30px;
+  font-style: italic;
+}
+.carousel-item .contenido .coment2 {
+  color: #fefefe;
+  font-size: 30px;
+  font-style: italic;
 }
 
 .categorias {
@@ -93,11 +116,12 @@ nav a:hover {
 .categorias .nombreCategoria {
   display: grid;
   grid-template-columns: repeat(3, 33%);
-  grid-template-rows: repeat(2, 450px);
+  grid-template-rows: 650px 200px 650px;
   justify-content: center;
   text-align: center;
   background-color: transparent;
-  padding: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   z-index: 2;
 }
 .categorias .nombreCategoria div {
@@ -105,12 +129,12 @@ nav a:hover {
   box-shadow: 10px 10px 10px #071013;
 }
 .categorias .nombreCategoria .img1 {
-  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/infantiles.JPG);
-  grid-area: 1/1/2/2;
+  background-image: linear-gradient(hsla(0, 0%, 100%, 0.5), hsl(195, 46%, 5%)), url(./images/infantiles.JPG);
+  grid-area: 1/2/2/3;
   position: relative;
 }
 .categorias .nombreCategoria .img1 p {
-  color: #071013;
+  color: #FCBF23;
   font-family: "Montserrat";
   font-size: 60px;
   position: absolute;
@@ -120,11 +144,11 @@ nav a:hover {
 }
 .categorias .nombreCategoria .img3 {
   background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/1.JPG);
-  grid-area: 2/3/3/4;
+  grid-area: 3/2/4/3;
   position: relative;
 }
 .categorias .nombreCategoria .img3 p {
-  color: #071013;
+  color: #FCBF23;
   font-family: "Montserrat";
   font-size: 60px;
   position: absolute;
@@ -139,7 +163,7 @@ nav a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   height: 600px;
-  width: 50%;
+  width: 75%;
   background-color: #071013;
   display: flex;
   align-items: center;
@@ -164,10 +188,12 @@ nav a:hover {
   color: #FCBF23;
   letter-spacing: 2px;
   padding: 10px;
+  margin-bottom: 0;
 }
 .reseñas .carousel-item {
   position: relative;
-  height: 400px;
+  height: 500px;
+  align-items: center;
 }
 .reseñas .carousel-item .image-gradient1 {
   position: absolute;
@@ -175,7 +201,7 @@ nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 99%, 0.708)), url(./images/fondo2.jpg) !important;
+  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 99%, 0.708), hsl(195, 46%, 5%)), url(./images/fondo2.jpg) !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -187,7 +213,7 @@ nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(50, 100%, 50%, 0.708)), url(./images/fondo2.jpg) !important;
+  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(50, 100%, 50%, 0.708), hsl(195, 46%, 5%)), url(./images/fondo2.jpg) !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -199,7 +225,7 @@ nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(134, 92%, 15%, 0.708)), url(./images/fondo2.jpg) !important;
+  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(134, 92%, 15%, 0.708), hsl(195, 46%, 5%)), url(./images/fondo2.jpg) !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -211,7 +237,7 @@ nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(234, 85%, 23%, 0.708)), url(./images/fondo2.jpg) !important;
+  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(234, 85%, 23%, 0.708), hsl(195, 46%, 5%)), url(./images/fondo2.jpg) !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -219,6 +245,9 @@ nav a:hover {
 }
 
 /*FOOTER*/
+footer {
+  width: 100%;
+}
 footer:hover {
   color: #FCBF23;
 }
@@ -268,6 +297,188 @@ footer .pie .final {
 footer .pie .final .mirco {
   color: #FCBF23;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 1350px) {
+  .carousel-item .contenido p {
+    font-size: 40px;
+  }
+  .categorias .nombreCategoria .img1 p {
+    font-size: 50px;
+  }
+  .categorias .nombreCategoria .img3 p {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .categorias .nombreCategoria .img1 p {
+    font-size: 30px;
+  }
+  .categorias .nombreCategoria .img3 p {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .carousel-item {
+    height: 500px;
+  }
+  .carousel-item .contenido h1 {
+    font-size: 80px;
+  }
+  .carousel-item .contenido p {
+    font-size: 30px;
+  }
+  .carousel-item .contenido button {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .categorias .nombreCategoria {
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 450px 200px 450px;
+  }
+  .categorias .nombreCategoria .img1 {
+    grid-area: 1/2/2/3;
+  }
+  .categorias .nombreCategoria .img3 {
+    grid-area: 3/2/4/3;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .carousel-item {
+    height: 400px;
+  }
+  .carousel-item .contenido h1 {
+    font-size: 70px;
+  }
+  .carousel-item .contenido p {
+    font-size: 20px;
+  }
+  .carousel-item .contenido button {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .carousel-item .contenido .nombre {
+    font-size: 60px;
+  }
+  .carousel-item .contenido .coment {
+    font-size: 20px;
+  }
+  .categorias .nombreCategoria {
+    grid-template-rows: 350px 200px 350px;
+  }
+  .categorias .cat p {
+    font-size: 60px;
+  }
+  .reseñas div p {
+    font-size: 60px;
+  }
+  .reseñas .carousel-item {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  header .nav {
+    align-items: center;
+    height: 200px;
+  }
+  header .nav ul {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .carousel-item {
+    height: 350px;
+  }
+  .categorias .nombreCategoria {
+    grid-template-rows: 250px 200px 250px;
+  }
+  .categorias .nombreCategoria .img1 p {
+    font-size: 20px;
+  }
+  .categorias .nombreCategoria .img3 p {
+    font-size: 20px;
+  }
+  .categorias .cat {
+    height: 400px;
+  }
+  .categorias .cat p {
+    font-size: 40px;
+  }
+  .reseñas div p {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  header .nav {
+    height: 180px;
+  }
+  header .nav ul {
+    font-size: 10px;
+  }
+  .carousel-item {
+    height: 350px;
+  }
+  .carousel-item .contenido h1 {
+    font-size: 60px;
+  }
+  .carousel-item .contenido p {
+    font-size: 15px;
+  }
+  .carousel-item .contenido button {
+    font-size: 10px;
+    margin-top: 10px;
+    padding: 8px;
+  }
+  .reseñas .carousel-item {
+    height: 300px;
+  }
+  .reseñas .carousel-item .nombre {
+    font-size: 40px;
+  }
+  .reseñas .carousel-item .coment {
+    font-size: 15px;
+  }
+  .reseñas .carousel-item .coment2 {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .categorias .nombreCategoria {
+    grid-template-rows: 180px 150px 180px;
+  }
+  .categorias .nombreCategoria .img1 p {
+    font-size: 10px;
+  }
+  .categorias .nombreCategoria .img3 p {
+    font-size: 10px;
+  }
+  .categorias .cat {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .carousel-item {
+    height: 250px;
+  }
+  .carousel-item .contenido p {
+    font-size: 12px;
+  }
+  .reseñas .carousel-item {
+    height: 250px;
+  }
+  .reseñas .carousel-item .nombre {
+    font-size: 30px;
+  }
+  .reseñas .carousel-item .coment {
+    font-size: 12px;
+  }
+  .reseñas .carousel-item .coment2 {
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
