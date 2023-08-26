@@ -950,6 +950,12 @@ footer .pie .final .mirco {
   .programas .texto2 p {
     font-size: 11px;
   }
+  .footer .pages {
+    font-size: 20px;
+  }
+  .footer .pie .final {
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .carousel-item {
@@ -1139,6 +1145,15 @@ footer .pie .final .mirco {
   }
   .programas .texto2 p {
     font-size: 8px;
+  }
+  .footer .row h5 {
+    font-size: 17px;
+  }
+  .footer .pages {
+    font-size: 17px;
+  }
+  .footer .pie .final {
+    font-size: 17px;
   }
 }
 

@@ -1223,6 +1223,17 @@ footer{
             }
         }
     }
+
+    .footer{
+        .pages{
+            font-size: 20px;
+        }
+        .pie{
+            .final{
+                font-size: 20px;
+            }
+        }
+    }
 }   
 
 @media only screen and (max-width:600px){
@@ -1509,6 +1520,22 @@ footer{
         .texto2{
             p{
                 font-size: 8px;
+            }
+        }
+    }
+
+    .footer{
+        .row{
+            h5{
+                font-size: 17px;
+            }
+        }
+        .pages{
+            font-size: 17px;
+        }
+        .pie{
+            .final{
+                font-size: 17px;
             }
         }
     }
