@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="../styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/icono.png" type="image/x-icon" />
     <title>Contacto</title>
 </head>
 
@@ -19,52 +20,72 @@
         </div>
 
         <div class="nav">
-            <img src="../images/zenkai.jpg" alt="logo" class="logoImagen2">
-                <ul>
+            <ul>
+                <img src="../images/zenkai.jpg" alt="logo" class="logoImagen2">
                 <a class="nav-link" href="../index.html">Inicio</a>
-                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
                 <a class="nav-link" href="../pages/programas.html">Programas</a>
+                <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
                 <a class="nav-link" href="../pages/reseñas.html">Reseñas</a>
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                 <a class="nav-link" href="../pages/galeria.html">Galería</a>
-                <a class="nav-link" href="#">Contacto</a>
-                </ul>
-            <img src="../images/zenkai.jpg" alt="logo" class="logoImagen2">
+                <img src="../images/zenkai.jpg" alt="logo" class="logoImagen2">
+            </ul>
         </div>
     </header>
 
     <div>
         <h1 class="nombreTitulo3">¿QUÉ ESPERAS PARA VENIR A ENTRENAR?</h1>
-        <h2 class="contacte">Dejá tus datos acá abajo</h2>
     </div>
 
-    <div class="contacto">
-
-        <div class="maps">
-            <iframe class=maps src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.755636486732!2d-60.71361758501762!3d-31.640540414295657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a94243050671%3A0x4491f318ff72ef13!2sGimnasio%20Zenkai!5e0!3m2!1ses-419!2spt!4v1677036659518!5m2!1ses-419!2spt" style="border: 10px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div id="quienes" class="row row-cols-1 row-cols-md-2 m-0">
+        <div class="col mb-4">
+            <div class="card2">
+                <iframe class=maps src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.755636486732!2d-60.71361758501762!3d-31.640540414295657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a94243050671%3A0x4491f318ff72ef13!2sGimnasio%20Zenkai!5e0!3m2!1ses-419!2spt!4v1677036659518!5m2!1ses-419!2spt" style="border: 10px; height: 450px; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
 
-        <div class="formulario">
-            <form action="">
-            <p class="contactenos">¡TE CONTACTAMOS!</p>
-            <label for="nombre">Ingrese su nombre: </label>
-            <input type="text" placeholder="Nombre y Apellido" name="nombre" required/><br>
-            <br><label for="telefono">Ingrese su numero de telefono: </label>
-            <input type="number" placeholder="Telefono" name="telefono" required/><br>
-            <br><label for="correo">Ingrese su correo: </label>
-            <input type="email" placeholder="Correo electronico" name="correo" required/><br>
-            <br><label for="clase">Elija su clase: </label>
-                <select name="clase" required>
-                <option value="Nada"></option>
-                <option value="Infantiles">Infantiles</option>
-                <option value="Adolescentes">Adolescentes</option>
-                <option value="Adultos">Adultos</option>
-            </select><br>
-            <br><label for="Mensaje">Déjenos su mensaje: </label>
-            <input type="text" placeholder="Escriba su consulta..." name="mensaje" required/><br>
-            <br><input class=btn2 type="submit" value=" Contactar ">
-            </form>
+        <div class="col mb-4">
+            <div class="card2">
+                <div class="card-body text-center">
+                    <h5 class="card-title">CONTACTANOS</h5>
+                    <a href="https://wa.me/qr/MUUCZ5GGXX4YI1" target="_blank"><i class="fa-brands fa-whatsapp"></i> WHATSAPP</a><hr>
+                    <a href="https://www.instagram.com/zenkai.taekwondo/" target="_blank"><i class="fa-brands fa-instagram text-light"></i> INSTAGRAM</a><hr>
+                    <i class="fa-regular fa-envelope"></i><a HREF="mailto:carlosmarmendez@hotmail.com"> EMAIL</a>
+                </div>
+            </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="pages">
+            <a href="https://www.facebook.com/zenkai.taekwondo" target="_blank"><i class="fa-brands fa-facebook text-light"></i></a>
+            <a href="https://www.youtube.com/watch?v=Aptn61euW-Y" target="_blank"><i class="fa-brands fa-youtube text-light"></i></a>        
+        </div>
+        
+        <div class="row">
+            <div class="col-xs-12 col-lg-3">
+            <h5>NOSOTROS</h5>
+            <div><a class="links" href="../pages/nosotros.html">¿Quiénes somos?</a></div>
+            <div><a class="links" href="../pages/galeria.html">Galería</a></div>
+            <div><a class="links" href="../pages/reseñas.html">Comentarios</a></div>
+            </div>
+            <div class="col-xs-12 col-lg-3">
+            <h5>PROGRAMAS</h5>
+            <div><a class="links" href="../pages/programas.html">Infantiles</a></div>
+            <div><a class="links" href="../pages/programas.html">Adolescentes-Adultos</a></div>
+            </div>
+            <div class="col-xs-12 col-lg-3">
+            <h5>CONTACTO</h5>
+            <div><a class="links" href="../pages/contacto.html">¿Dónde estamos?</a></div>
+            <div><a class="links" href="../pages/contacto.html">¿Cómo obtengo más información?</a></div>
+            </div>
+        </div>
+        
+        <div class="pie">
+            <p class="final">® 2021 - ZENKAI TAEKWONDO - TODOS LOS DERECHOS RESERVADOS</p>
+            <p class="final">WEBSITE DISEÑADO POR <a href="https://www.instagram.com/mircogdy/" target="_blank" class="mirco">GODOY MIRCO VALENTIN</a></p>
+        </div> 
+    </footer>
     
 </body>
 </html>

@@ -31,14 +31,21 @@ header .logoImagen2 {
   height: 40px;
 }
 header .nav {
+  display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  margin: 10px;
+  padding: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
 }
 header .nav ul {
   display: flex;
   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 header .nav a {
   text-decoration: none !important;
@@ -60,6 +67,28 @@ header .nav a:hover {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/fondo2.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.carousel-item .image-gradient7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/frente2.jpeg) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.carousel-item .image-gradient8 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/frente3.jpeg) !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -202,7 +231,7 @@ header .nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 99%, 0.708), hsl(195, 46%, 5%)), url(./images/fondo2.jpg) !important;
+  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 99%, 0.484), hsl(195, 46%, 5%)), url(./images/fondo2.jpg) !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -226,7 +255,7 @@ header .nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(134, 92%, 15%, 0.708), hsl(195, 46%, 5%)), url(./images/fondo2.jpg) !important;
+  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(134, 92%, 15%, 0.708), hsl(195, 46%, 5%)), url(./images/encabezado.jpg) !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -244,6 +273,76 @@ header .nav a:hover {
   background-size: 100%;
   padding: 40px;
 }
+.reseñas .carousel-item .image-gradient5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(234, 85%, 23%, 0.708), hsl(195, 46%, 5%)), url(./images/fondo2.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding: 40px;
+}
+.reseñas .carousel-item .image-gradient6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(234, 85%, 23%, 0.708), hsl(195, 46%, 5%)), url(./images/gym.JPG) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding: 40px;
+}
+
+/*NOSOTROS*/
+.carousel-item .image-gradient9 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/gym.JPG) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.carousel-item .image-gradient10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/gym2.JPG) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.col {
+  margin-top: 30px;
+}
+.col .card2 {
+  background-color: #071013;
+}
+.col .card2 .card-img-top {
+  height: 800px;
+}
+.col .card2 .card-body .card-title {
+  font-family: "Bebas";
+  font-size: 50px;
+  color: #FCBF23;
+  text-align: center;
+}
+.col .card2 .card-body .card-text {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 20px;
+  color: #fefefe;
+}
 
 /*PROGRAMAS*/
 .categorias2 p {
@@ -256,85 +355,21 @@ header .nav a:hover {
   margin-bottom: 0;
 }
 
-.programas {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 450px);
-  column-gap: 50px;
-  row-gap: 50px;
-  margin: 0 50px 0 50px;
+.card {
+  background-color: #071013;
 }
-.programas .infantiles2 {
-  grid-area: 1/1/2/2;
-  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5), hsl(195, 46%, 5%)), url(./images/infantiles.JPG);
-  border-radius: 10px;
-  background-position: center;
-  position: relative;
-}
-.programas .infantiles2 p {
+.card .row .card-body .card-title {
+  font-family: "Bebas";
+  font-size: 50px;
   color: #FCBF23;
-  font-family: "Montserrat";
-  text-shadow: 0.1em 0.1em 0.2em #071013;
-  font-size: 60px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -10%);
+  text-align: center;
+  padding-left: 20px;
 }
-.programas .infantiles2 .p2 {
-  color: #FCBF23;
+.card .row .card-body .card-text {
+  text-align: center;
   font-family: "Montserrat";
-  text-shadow: 0.1em 0.1em 0.2em #071013;
-  font-size: 60px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -90%);
-}
-.programas .texto {
-  position: relative;
-  grid-area: 2/1/3/2;
-}
-.programas .texto p {
-  font-family: "Montserrat";
-  color: #fefefe;
   font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 25px;
-}
-.programas .adultos2 {
-  grid-area: 3/1/4/2;
-  background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5), hsl(195, 46%, 5%)), url(./images/infantiles.JPG);
-  border-radius: 10px;
-  background-position: center;
-  position: relative;
-}
-.programas .adultos2 p {
-  color: #FCBF23;
-  text-shadow: 0.1em 0.1em 0.2em #071013;
-  font-family: "Montserrat";
-  font-size: 60px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.programas .texto2 {
-  position: relative;
-  grid-area: 4/1/5/2;
-}
-.programas .texto2 p {
-  font-family: "Montserrat";
   color: #fefefe;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 25px;
 }
 
 /*RESEÑAS*/
@@ -530,59 +565,22 @@ header .nav a:hover {
   margin-bottom: 40px;
 }
 
-.contacto {
-  height: 300px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 450px;
-  column-gap: 200px;
-  margin-left: 200px;
-  margin-right: 200px;
-  place-items: center;
-}
-.contacto .maps {
-  border-radius: 10px;
-  grid-area: 1/1/2/2;
-  height: 100%;
-  width: 100%;
-  background-color: #FCBF23;
-  margin-bottom: 30px;
-}
-.contacto .formulario {
-  color: #fefefe;
-  font-family: "Montserrat";
-  border-radius: 10px;
-  grid-area: 1/2/2/3;
-  padding: 20px;
-}
-.contacto .formulario label {
-  color: #FCBF23;
-}
-.contacto .formulario select,
-.contacto .formulario input {
-  margin-left: 5px;
-  border: 2px solid #FCBF23;
-  border-radius: 5px;
-}
-.contacto .formulario .contactenos {
-  font-family: "Bebas";
+.col .card2 .card-body {
   font-size: 30px;
-  letter-spacing: 3px;
-  margin-bottom: 5px;
-  text-align: left;
-  color: #FCBF23;
-  font-style: italic;
-}
-.contacto .formulario .btn2 {
-  padding: 5px;
-  letter-spacing: 2px;
-  background-color: #FCBF23;
-  color: #071013;
-  font-family: "Bebas";
-  font-style: italic;
-  font-size: 20px;
-  border: 3px solid #fefefe;
+  color: #fefefe;
+  padding: 20px;
   text-align: center;
+  font-family: "Bebas";
+}
+.col .card2 .card-body a {
+  text-decoration: none;
+  color: #fefefe;
+}
+.col .card2 .card-body a:hover {
+  color: #FCBF23;
+}
+.col .card2 .card-body i:hover {
+  color: #FCBF23;
 }
 
 /*FOOTER*/
@@ -663,6 +661,25 @@ footer .pie .final .mirco {
     font-size: 15px;
   }
 }
+.programas {
+  grid-template-rows: 450px 300px 450px 300px;
+}
+.programas .infantiles2 p {
+  font-size: 40px;
+}
+.programas .infantiles2 .p2 {
+  font-size: 40px;
+}
+.programas .texto p {
+  font-size: 18px;
+}
+.programas .adultos2 p {
+  font-size: 40px;
+}
+.programas .texto2 p {
+  font-size: 18px;
+}
+
 @media only screen and (max-width: 1350px) {
   .carousel-item .contenido p {
     font-size: 40px;
@@ -674,6 +691,25 @@ footer .pie .final .mirco {
     font-size: 50px;
   }
 }
+.programas {
+  grid-template-rows: 450px 300px 450px 300px;
+}
+.programas .infantiles2 p {
+  font-size: 40px;
+}
+.programas .infantiles2 .p2 {
+  font-size: 40px;
+}
+.programas .texto p {
+  font-size: 17px;
+}
+.programas .adultos2 p {
+  font-size: 40px;
+}
+.programas .texto2 p {
+  font-size: 17px;
+}
+
 @media only screen and (max-width: 1300px) {
   .nombreTitulo3 {
     font-size: 55px;
@@ -692,6 +728,25 @@ footer .pie .final .mirco {
     font-size: 30px;
   }
 }
+.programas {
+  grid-template-rows: 400px 300px 400px 300px;
+}
+.programas .infantiles2 p {
+  font-size: 40px;
+}
+.programas .infantiles2 .p2 {
+  font-size: 40px;
+}
+.programas .texto p {
+  font-size: 16px;
+}
+.programas .adultos2 p {
+  font-size: 40px;
+}
+.programas .texto2 p {
+  font-size: 16px;
+}
+
 @media only screen and (max-width: 1100px) {
   .reseñas22 .testimonio2 {
     font-size: 13px;
@@ -722,7 +777,7 @@ footer .pie .final .mirco {
     font-size: 20px;
   }
   .programas {
-    grid-template-rows: 450px 300px 450px 300px;
+    grid-template-rows: 400px 300px 400px 300px;
   }
   .programas .infantiles2 p {
     font-size: 40px;
@@ -731,13 +786,13 @@ footer .pie .final .mirco {
     font-size: 40px;
   }
   .programas .texto p {
-    font-size: 17px;
+    font-size: 15px;
   }
   .programas .adultos2 p {
     font-size: 40px;
   }
   .programas .texto2 p {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 950px) {
@@ -773,6 +828,25 @@ footer .pie .final .mirco {
     font-size: 8px;
   }
 }
+.programas {
+  grid-template-rows: 350px 300px 350px 300px;
+}
+.programas .infantiles2 p {
+  font-size: 40px;
+}
+.programas .infantiles2 .p2 {
+  font-size: 40px;
+}
+.programas .texto p {
+  font-size: 14px;
+}
+.programas .adultos2 p {
+  font-size: 40px;
+}
+.programas .texto2 p {
+  font-size: 14px;
+}
+
 @media only screen and (max-width: 850px) {
   .galeria {
     grid-template-columns: 1fr 1fr;
@@ -794,6 +868,25 @@ footer .pie .final .mirco {
     font-size: 15px;
   }
 }
+.programas {
+  grid-template-rows: 300px 300px 300px 300px;
+}
+.programas .infantiles2 p {
+  font-size: 40px;
+}
+.programas .infantiles2 .p2 {
+  font-size: 30px;
+}
+.programas .texto p {
+  font-size: 12px;
+}
+.programas .adultos2 p {
+  font-size: 30px;
+}
+.programas .texto2 p {
+  font-size: 12px;
+}
+
 @media only screen and (max-width: 750px) {
   header .nav {
     align-items: center;
@@ -840,7 +933,7 @@ footer .pie .final .mirco {
     font-size: 7px;
   }
   .programas {
-    grid-template-rows: 350px 300px 350px 300px;
+    grid-template-rows: 250px 300px 250px 300px;
   }
   .programas .infantiles2 p {
     font-size: 30px;
@@ -849,13 +942,13 @@ footer .pie .final .mirco {
     font-size: 30px;
   }
   .programas .texto p {
-    font-size: 14px;
+    font-size: 11px;
   }
   .programas .adultos2 p {
     font-size: 30px;
   }
   .programas .texto2 p {
-    font-size: 14px;
+    font-size: 11px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -891,6 +984,25 @@ footer .pie .final .mirco {
     padding: 0 50px 50px 50px;
   }
 }
+.programas {
+  grid-template-rows: 250px 300px 250px 300px;
+}
+.programas .infantiles2 p {
+  font-size: 30px;
+}
+.programas .infantiles2 .p2 {
+  font-size: 30px;
+}
+.programas .texto p {
+  font-size: 10px;
+}
+.programas .adultos2 p {
+  font-size: 30px;
+}
+.programas .texto2 p {
+  font-size: 10px;
+}
+
 @media only screen and (max-width: 550px) {
   header .nav {
     height: 210px;
@@ -970,8 +1082,7 @@ footer .pie .final .mirco {
     font-size: 6px;
   }
   .programas {
-    grid-template-rows: 250px 200px 250px 200px;
-    margin: 0 40px 0 40px;
+    grid-template-rows: 200px 300px 200px 300px;
   }
   .programas .infantiles2 p {
     font-size: 30px;
@@ -980,13 +1091,13 @@ footer .pie .final .mirco {
     font-size: 30px;
   }
   .programas .texto p {
-    font-size: 10px;
+    font-size: 9px;
   }
   .programas .adultos2 p {
     font-size: 30px;
   }
   .programas .texto2 p {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -1010,6 +1121,24 @@ footer .pie .final .mirco {
   }
   .nombreTitulo2 {
     font-size: 60px;
+  }
+  .programas {
+    grid-template-rows: 200px 300px 200px 300px;
+  }
+  .programas .infantiles2 p {
+    font-size: 25px;
+  }
+  .programas .infantiles2 .p2 {
+    font-size: 25px;
+  }
+  .programas .texto p {
+    font-size: 8px;
+  }
+  .programas .adultos2 p {
+    font-size: 25px;
+  }
+  .programas .texto2 p {
+    font-size: 8px;
   }
 }
 

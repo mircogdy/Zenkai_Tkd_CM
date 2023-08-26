@@ -41,14 +41,22 @@ header{
         }
 
         .nav{
+            display: flex;
             justify-content: center;
             align-items: center;
-            padding: 10px;
-            margin: 10px;
+            padding: 40px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            position: relative;
+
             
             ul{
                 display: flex;
                 text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
 
             a{
@@ -73,6 +81,30 @@ header{
         width: 100%;
         height: 100%;
         background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/fondo2.jpg) !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .image-gradient7{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/frente2.jpeg) !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .image-gradient8{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/frente3.jpeg) !important;
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
@@ -233,7 +265,7 @@ header{
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 99%, 0.708),hsl(195, 46%, 5%)), url(./images/fondo2.jpg) !important;
+            background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 99%, 0.484),hsl(195, 46%, 5%)), url(./images/fondo2.jpg) !important;
             background-repeat: no-repeat;
             background-position: center;
             background-size: 100%;
@@ -259,7 +291,7 @@ header{
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: linear-gradient(hsl(195, 46%, 5%), hsla(134, 92%, 15%, 0.708), hsl(195, 46%, 5%)), url(./images/fondo2.jpg) !important;
+            background-image: linear-gradient(hsl(195, 46%, 5%), hsla(134, 92%, 15%, 0.708), hsl(195, 46%, 5%)), url(./images/encabezado.jpg) !important;
             background-repeat: no-repeat;
             background-position: center;
             background-size: 100%;
@@ -278,6 +310,87 @@ header{
             background-size: 100%;
             padding: 40px;
         }
+
+        .image-gradient5{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(hsl(195, 46%, 5%), hsla(234, 85%, 23%, 0.708), hsl(195, 46%, 5%)), url(./images/fondo2.jpg) !important;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            padding: 40px;
+        }
+
+        .image-gradient6{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(hsl(195, 46%, 5%), hsla(234, 85%, 23%, 0.708), hsl(195, 46%, 5%)), url(./images/gym.JPG) !important;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            padding: 40px;
+        }
+    }
+}
+
+/*NOSOTROS*/
+.carousel-item{
+    .image-gradient9{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/gym.JPG) !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    .image-gradient10{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/gym2.JPG) !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+}
+
+.col{
+    margin-top: 30px;
+
+    .card2{
+        background-color: #071013;
+
+        .card-img-top{
+            height: 800px;
+        }
+
+        .card-body{
+            .card-title{
+            font-family: $texto1;
+            font-size: 50px;
+            color: $color3;
+            text-align: center;
+            }
+        
+            .card-text{
+            text-align: center;
+            font-family: $texto2;
+            font-size: 20px;
+            color: $color1;
+            }   
+        }   
     }
 }
 
@@ -294,94 +407,26 @@ header{
     }
 }
 
-.programas{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 450px);
-    column-gap: 50px;
-    row-gap: 50px;
-    margin: 0 50px 0 50px;
-
-    .infantiles2{
-        grid-area: 1/1/2/2;
-        background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5),hsl(195, 46%, 5%)), url(./images/infantiles.JPG);
-        border-radius: 10px;
-        background-position: center;
-        position: relative;
-
-        p{
+.card{
+    background-color: #071013;
+    .row{
+        .card-body{
+        .card-title{
+            font-family: $texto1;
+            font-size: 50px;
             color: $color3;
-            font-family: $texto2;
-            text-shadow: 0.1em 0.1em 0.2em $color2;
-            font-size: 60px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-10%);
+            text-align: center;
+            padding-left: 20px;
         }
-
-        .p2{
-            color: $color3;
+    
+        .card-text{
+            text-align: center;
             font-family: $texto2;
-            text-shadow: 0.1em 0.1em 0.2em $color2;
-            font-size: 60px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-90%);
-        }
-    }
-
-    .texto{
-        position: relative;
-        grid-area: 2/1/3/2;
-
-        p{
-            font-family: $texto2;
-            color: $color1;
             font-size: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            font-size: 25px;
-        }
-    }
-
-    .adultos2{
-        grid-area: 3/1/4/2;
-        background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5),hsl(195, 46%, 5%)), url(./images/infantiles.JPG);
-        border-radius: 10px;
-        background-position: center;
-        position: relative;
-
-        p{
-            color: $color3;
-            text-shadow: 0.1em 0.1em 0.2em $color2;
-            font-family: $texto2;
-            font-size: 60px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-    }
-
-    .texto2{
-        position: relative;
-        grid-area: 4/1/5/2;
-
-        p{
-            font-family: $texto2;
             color: $color1;
-            font-size: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            font-size: 25px;
         }
     }
+}
 }
 
 /*RESEÑAS*/
@@ -603,66 +648,32 @@ header{
     margin-bottom: 40px;
 }
 
-.contacto{
-    height: 300px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 450px;
-    column-gap: 200px;
-    margin-left: 200px;
-    margin-right: 200px;
-    place-items: center;
+.col{
+    .card2{
+        .card-body{
+                font-size: 30px;
+                color: $color1;
+                padding: 20px;
+                text-align: center;
+                font-family: $texto1;
 
-    .maps{
-        border-radius: 10px;
-        grid-area: 1 / 1 / 2 / 2;
-        height: 100%;
-        width: 100%;
-        background-color: $color3;
-        margin-bottom: 30px;
-    }
+                a{
+                    text-decoration: none;
+                    color: $color1;
+                    &:hover{
+                        color: $color3;
+                    }
+                }
 
-    .formulario{
-        color: $color1;
-        font-family: $texto2;
-        border-radius: 10px;
-        grid-area: 1 / 2 / 2 / 3;
-        padding: 20px;
-
-        label{
-            color: $color3;
-        }
-
-        select,
-        input{
-            margin-left: 5px;
-            border: 2px solid $color3;
-            border-radius: 5px;
-        }
-
-        .contactenos{
-            font-family: $texto1;
-            font-size: 30px;
-            letter-spacing: 3px;
-            margin-bottom: 5px;
-            text-align: left;
-            color: $color3;
-            font-style: italic;
-        }
-
-        .btn2{
-            padding: 5px;
-            letter-spacing: 2px;
-            background-color: $color3;
-            color: $color2;
-            font-family: $texto1;
-            font-style: italic;
-            font-size: 20px;
-            border: 3px solid $color1;
-            text-align: center;
+                i{
+                    &:hover{
+                        color: $color3;
+                    }
+                }
         }
     }
 }
+
 
 /*FOOTER*/
 footer{
@@ -758,6 +769,37 @@ footer{
     }
 }
 
+.programas{
+    grid-template-rows: 450px 300px 450px 300px;
+    .infantiles2{
+        p{
+            font-size: 40px;
+        }
+
+        .p2{
+            font-size: 40px;
+        }
+    }
+
+    .texto{
+        p{
+            font-size: 18px;
+        }
+    }
+
+    .adultos2{
+        p{
+            font-size: 40px;
+        }
+    }
+
+    .texto2{
+        p{
+            font-size: 18px;
+        }
+    }
+}
+
 @media only screen and (max-width:1350px){
     .carousel-item{
         .contenido{
@@ -779,6 +821,37 @@ footer{
                     font-size: 50px;
                 }
             }
+        }
+    }
+}
+
+.programas{
+    grid-template-rows: 450px 300px 450px 300px;
+    .infantiles2{
+        p{
+            font-size: 40px;
+        }
+
+        .p2{
+            font-size: 40px;
+        }
+    }
+
+    .texto{
+        p{
+            font-size: 17px;
+        }
+    }
+
+    .adultos2{
+        p{
+            font-size: 40px;
+        }
+    }
+
+    .texto2{
+        p{
+            font-size: 17px;
         }
     }
 }
@@ -808,6 +881,37 @@ footer{
                     font-size: 30px;
                 }
             }
+        }
+    }
+}
+
+.programas{
+    grid-template-rows: 400px 300px 400px 300px;
+    .infantiles2{
+        p{
+            font-size: 40px;
+        }
+
+        .p2{
+            font-size: 40px;
+        }
+    }
+
+    .texto{
+        p{
+            font-size: 16px;
+        }
+    }
+
+    .adultos2{
+        p{
+            font-size: 40px;
+        }
+    }
+
+    .texto2{
+        p{
+            font-size: 16px;
         }
     }
 }
@@ -852,7 +956,7 @@ footer{
 
 
     .programas{
-        grid-template-rows: 450px 300px 450px 300px;
+        grid-template-rows: 400px 300px 400px 300px;
         .infantiles2{
             p{
                 font-size: 40px;
@@ -865,7 +969,7 @@ footer{
 
         .texto{
             p{
-                font-size: 17px;
+                font-size: 15px;
             }
         }
 
@@ -877,7 +981,7 @@ footer{
 
         .texto2{
             p{
-                font-size: 17px;
+                font-size: 15px;
             }
         }
     }
@@ -929,6 +1033,37 @@ footer{
     }
 }
 
+.programas{
+    grid-template-rows: 350px 300px 350px 300px;
+    .infantiles2{
+        p{
+            font-size: 40px;
+        }
+
+        .p2{
+            font-size: 40px;
+        }
+    }
+
+    .texto{
+        p{
+            font-size: 14px;
+        }
+    }
+
+    .adultos2{
+        p{
+            font-size: 40px;
+        }
+    }
+
+    .texto2{
+        p{
+            font-size: 14px;
+        }
+    }
+}
+
 @media only screen and (max-width:850px){
     .galeria{
         grid-template-columns: 1fr 1fr;
@@ -951,6 +1086,37 @@ footer{
             button{
                 font-size: 15px;
             }
+        }
+    }
+}
+
+.programas{
+    grid-template-rows: 300px 300px 300px 300px;
+    .infantiles2{
+        p{
+            font-size: 40px;
+        }
+
+        .p2{
+            font-size: 30px;
+        }
+    }
+
+    .texto{
+        p{
+            font-size: 12px;
+        }
+    }
+
+    .adultos2{
+        p{
+            font-size: 30px;
+        }
+    }
+
+    .texto2{
+        p{
+            font-size: 12px;
         }
     }
 }
@@ -1028,7 +1194,7 @@ footer{
     }
 
     .programas{
-        grid-template-rows: 350px 300px 350px 300px;
+        grid-template-rows: 250px 300px 250px 300px;
         .infantiles2{
             p{
                 font-size: 30px;
@@ -1041,7 +1207,7 @@ footer{
 
         .texto{
             p{
-                font-size: 14px;
+                font-size: 11px;
             }
         }
 
@@ -1053,7 +1219,7 @@ footer{
 
         .texto2{
             p{
-                font-size: 14px;
+                font-size: 11px;
             }
         }
     }
@@ -1105,6 +1271,37 @@ footer{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12, 450px);
         padding: 0 50px 50px 50px;
+    }
+}
+
+.programas{
+    grid-template-rows: 250px 300px 250px 300px;
+    .infantiles2{
+        p{
+            font-size: 30px;
+        }
+
+        .p2{
+            font-size: 30px;
+        }
+    }
+
+    .texto{
+        p{
+            font-size: 10px;
+        }
+    }
+
+    .adultos2{
+        p{
+            font-size: 30px;
+        }
+    }
+
+    .texto2{
+        p{
+            font-size: 10px;
+        }
     }
 }
 
@@ -1221,9 +1418,7 @@ footer{
     }
 
     .programas{
-        grid-template-rows: 250px 200px 250px 200px;
-        margin: 0 40px 0 40px;
-
+        grid-template-rows: 200px 300px 200px 300px;
         .infantiles2{
             p{
                 font-size: 30px;
@@ -1236,7 +1431,7 @@ footer{
 
         .texto{
             p{
-                font-size: 10px;
+                font-size: 9px;
             }
         }
 
@@ -1248,7 +1443,7 @@ footer{
 
         .texto2{
             p{
-                font-size: 10px;
+                font-size: 9px;
             }
         }
     }
@@ -1285,5 +1480,36 @@ footer{
 
     .nombreTitulo2{
         font-size: 60px;
+    }
+
+    .programas{
+        grid-template-rows: 200px 300px 200px 300px;
+        .infantiles2{
+            p{
+                font-size: 25px;
+            }
+
+            .p2{
+                font-size: 25px;
+            }
+        }
+
+        .texto{
+            p{
+                font-size: 8px;
+            }
+        }
+
+        .adultos2{
+            p{
+                font-size: 25px;
+            }
+        }
+
+        .texto2{
+            p{
+                font-size: 8px;
+            }
+        }
     }
 }
