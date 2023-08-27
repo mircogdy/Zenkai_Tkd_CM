@@ -74,18 +74,6 @@ header{
     position: relative;
     height: 600px;
 
-    .image-gradient{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/fondo2.jpg) !important;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
-    }
-
     .image-gradient7{
         position: absolute;
         top: 0;
@@ -93,7 +81,6 @@ header{
         width: 100%;
         height: 100%;
         background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/frente2.jpeg) !important;
-        background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
@@ -443,7 +430,7 @@ header{
     font-style: italic;
     color: $color3;
     margin-bottom: 15px;
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 .reseñas22{
@@ -1143,11 +1130,15 @@ footer{
         grid-template-rows: repeat(6, 450px);
         padding: 0 50px 50px 50px;
     }
+
+    .carousel-item{
+        height: 360px;
+    }
 }
 
 @media only screen and (max-width:800px){
     .carousel-item{
-        height: 400px;
+        height: 360px;
 
         .contenido{
             h1{
