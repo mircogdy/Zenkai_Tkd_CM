@@ -357,7 +357,7 @@ header .nav a:hover {
 }
 .card .row .card-body .card-title {
   font-family: "Bebas";
-  font-size: 50px;
+  font-size: 40px;
   color: #FCBF23;
   text-align: center;
   padding-left: 20px;
@@ -593,11 +593,14 @@ footer .pages {
   padding: 20px;
   text-align: center;
 }
+footer .pages a {
+  padding: 10px;
+}
 footer .row {
   color: #fefefe;
   text-align: center;
+  justify-content: center;
   margin: 0;
-  word-spacing: 20px;
 }
 footer .row h5 {
   font-family: "Bebas";
@@ -642,12 +645,24 @@ footer .pie .final .mirco {
   .reseñas22 .testimonio2 {
     font-size: 18px;
   }
+  .card .row .card-body .card-title {
+    font-size: 38px;
+  }
+  .card .row .card-body .card-text {
+    font-size: 17px;
+  }
 }
 @media only screen and (max-width: 1550px) {
   .contacto {
     column-gap: 100px;
     margin-left: 100px;
     margin-right: 100px;
+  }
+  .card .row .card-body .card-title {
+    font-size: 30px;
+  }
+  .card .row .card-body .card-text {
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 1470px) {
@@ -680,6 +695,12 @@ footer .pie .final .mirco {
 @media only screen and (max-width: 1350px) {
   .carousel-item .contenido p {
     font-size: 40px;
+  }
+  .card .row .card-body .card-title {
+    font-size: 25px;
+  }
+  .card .row .card-body .card-text {
+    font-size: 12px;
   }
   .categorias .nombreCategoria .img1 p {
     font-size: 50px;
@@ -724,26 +745,31 @@ footer .pie .final .mirco {
   .categorias .nombreCategoria .img3 p {
     font-size: 30px;
   }
+  .programas {
+    grid-template-rows: 400px 300px 400px 300px;
+  }
+  .programas .infantiles2 p {
+    font-size: 40px;
+  }
+  .programas .infantiles2 .p2 {
+    font-size: 40px;
+  }
+  .programas .texto p {
+    font-size: 16px;
+  }
+  .programas .adultos2 p {
+    font-size: 40px;
+  }
+  .programas .texto2 p {
+    font-size: 16px;
+  }
+  .card .row .card-body .card-title {
+    font-size: 25px;
+  }
+  .card .row .card-body .card-text {
+    font-size: 10px;
+  }
 }
-.programas {
-  grid-template-rows: 400px 300px 400px 300px;
-}
-.programas .infantiles2 p {
-  font-size: 40px;
-}
-.programas .infantiles2 .p2 {
-  font-size: 40px;
-}
-.programas .texto p {
-  font-size: 16px;
-}
-.programas .adultos2 p {
-  font-size: 40px;
-}
-.programas .texto2 p {
-  font-size: 16px;
-}
-
 @media only screen and (max-width: 1100px) {
   .reseñas22 .testimonio2 {
     font-size: 13px;
@@ -802,6 +828,12 @@ footer .pie .final .mirco {
   }
   .reseñas22 .testimonio2 {
     font-size: 10px;
+  }
+  .card .row .card-body .card-title {
+    font-size: 22px;
+  }
+  .card .row .card-body .card-text {
+    font-size: 8px;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -884,6 +916,14 @@ footer .pie .final .mirco {
   font-size: 12px;
 }
 
+@media screen and (max-width: 767px) {
+  .card .row .card-body .card-title {
+    font-size: 40px;
+  }
+  .card .row .card-body .card-text {
+    font-size: 20px;
+  }
+}
 @media only screen and (max-width: 750px) {
   header .nav {
     align-items: center;
@@ -947,6 +987,12 @@ footer .pie .final .mirco {
   .programas .texto2 p {
     font-size: 11px;
   }
+  .col .card2 .card-body .card-title {
+    font-size: 30px;
+  }
+  .col .card2 .card-body .card-text {
+    font-size: 15px;
+  }
   .footer .pages {
     font-size: 20px;
   }
@@ -972,6 +1018,12 @@ footer .pie .final .mirco {
   }
   .categorias .cat p {
     font-size: 40px;
+  }
+  .card .row .card-body .card-title {
+    font-size: 35px;
+  }
+  .card .row .card-body .card-text {
+    font-size: 17px;
   }
   .reseñas div p {
     font-size: 40px;
@@ -1063,6 +1115,12 @@ footer .pie .final .mirco {
   }
   .categorias .cat {
     height: 300px;
+  }
+  .card .row .card-body .card-title {
+    font-size: 35px;
+  }
+  .card .row .card-body .card-text {
+    font-size: 15px;
   }
   .nombreTitulo2 {
     font-size: 50px;
