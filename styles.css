@@ -80,7 +80,7 @@ header .nav a:hover {
   background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/frente2.jpeg) !important;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
 }
 .carousel-item .image-gradient8 {
   position: absolute;
@@ -91,7 +91,7 @@ header .nav a:hover {
   background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/frente3.jpeg) !important;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
 }
 .carousel-item .contenido {
   position: absolute;
@@ -308,7 +308,7 @@ header .nav a:hover {
   background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/gym.JPG) !important;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
 }
 .carousel-item .image-gradient10 {
   position: absolute;
@@ -319,7 +319,7 @@ header .nav a:hover {
   background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/gym2.JPG) !important;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .col {
@@ -328,12 +328,9 @@ header .nav a:hover {
 .col .card2 {
   background-color: #071013;
 }
-.col .card2 .card-img-top {
-  height: 800px;
-}
 .col .card2 .card-body .card-title {
   font-family: "Bebas";
-  font-size: 50px;
+  font-size: 40px;
   color: #FCBF23;
   text-align: center;
 }
@@ -594,13 +591,13 @@ footer .pages {
   font-size: 30px;
   color: #fefefe;
   padding: 20px;
-  word-spacing: 20px;
   text-align: center;
 }
 footer .row {
   color: #fefefe;
   text-align: center;
-  justify-content: center;
+  margin: 0;
+  word-spacing: 20px;
 }
 footer .row h5 {
   font-family: "Bebas";

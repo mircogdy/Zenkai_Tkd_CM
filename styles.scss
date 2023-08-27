@@ -95,7 +95,7 @@ header{
         background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/frente2.jpeg) !important;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100%;
+        background-size: cover;
     }
 
     .image-gradient8{
@@ -107,7 +107,7 @@ header{
         background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/frente3.jpeg) !important;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100%;
+        background-size: cover;
     }
 
     .contenido{
@@ -350,7 +350,7 @@ header{
         background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/gym.JPG) !important;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100%;
+        background-size: cover;
     }
 
     .image-gradient10{
@@ -362,7 +362,7 @@ header{
         background-image: linear-gradient(hsl(195, 46%, 5%), hsla(0, 0%, 100%, 0.5)), url(./images/gym2.JPG) !important;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100%;
+        background-size: cover;
     }
 }
 
@@ -372,14 +372,10 @@ header{
     .card2{
         background-color: #071013;
 
-        .card-img-top{
-            height: 800px;
-        }
-
         .card-body{
             .card-title{
             font-family: $texto1;
-            font-size: 50px;
+            font-size: 40px;
             color: $color3;
             text-align: center;
             }
@@ -686,14 +682,14 @@ footer{
         font-size: 30px;
         color: $color1;
         padding: 20px;
-        word-spacing: 20px;
         text-align: center;
     }
 
     .row{
         color: $color1;
         text-align: center;
-        justify-content: center;
+        margin: 0;
+        word-spacing: 20px;
 
         h5{
             font-family: $texto1;
@@ -712,6 +708,7 @@ footer{
             justify-content: space-between;
             font-style: italic;
             color: $color1;
+
             &:hover{
                 color: $color3;
             }
